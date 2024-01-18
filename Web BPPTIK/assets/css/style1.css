@@ -1,0 +1,683 @@
+body{
+  margin-bottom: 0px;
+  padding: 0px;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  height: 100vh;
+}
+h6{
+  color: #fff;
+  text-decoration: underline;
+  text-align: left;
+}
+h5{
+  color: #fff;
+  font-size: 15px;
+  text-align: left;
+  text-decoration: none;
+}
+h3{
+  font-weight: bold;
+  color: #1a4167;
+}
+p{
+  font-size: 10px;
+  color: #afceea;
+  text-align: left;
+}
+a{
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: left;
+}
+a:hover{
+  font-size: 12px;
+  color: #dfc253;
+  text-decoration: none;
+  font-weight: bold;
+}
+.carousel-inner h5{
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+}
+.carousel-inner h5:hover{
+  color: #dfc253;
+  font-size: 13px;
+  text-align: center;
+}
+/*--------------------------------------------------------------
+# Topbar
+#1a4167 = Biru
+#dfc253 = emas
+
+--------------------------------------------------------------*/
+#topbar .info{
+	margin-left: 65%;
+}
+#topbar .info a{
+	color: grey;
+	text-decoration: none;
+	font-size: 12px;
+}
+#topbar .info a:hover{
+	color: #6F0404;
+	text-decoration: underline;
+}
+
+#topbar .social-links a {
+  color: #6f6f6f;
+  padding: 2px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+  color: #dfc253;
+}
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 70px;
+}
+
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#header .logo a {
+  color: #dfc253;
+}
+
+#header .logo img {
+  max-height: 50px;
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  border-top: 10px solid #dfc253;
+  padding: 15;
+  background-color: #1a4167;
+  
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 100px;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar li {
+  text-align: center;
+}
+.navbar a, .navbar a:focus {
+  display: flex;s
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #d2b346;
+}
+
+.navbar .getstarted {
+  color: #dfc253;
+  padding: 8px 25px;
+  margin-left: 30px;
+  border-radius: 4px;
+  border: 2px solid #dfc253;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.navbar .getstarted:hover {
+  background: #dfc253;
+  color: #fff;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #1a4167;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #dfc253;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/*========================================*/
+#main{
+  margin-top: 5%;
+}
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  border-top: 5px solid #dfc253;
+  text-align: center;
+  padding: 70px 20px 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+
+}
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.services .icon-box .icon i {
+  font-size: 36px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.services .icon-box .icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.services .icon-box .icon svg path {
+  transition: 0.5s;
+  fill: #f5f5f5;
+}
+
+.services .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .icon-box h4 a {
+  color: #222222;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+}
+
+/*==content==*/
+
+.col{
+  background: #1a4167;
+}
+.col .item{
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+   border-top: 5px solid #dfc253;
+}
+.kolom-b{
+  background: blue;
+}
+.kolom-c {
+  background: grey;
+
+}
+.kolom-c .item-c{
+  background: grey;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/*--------------------------------------------------------------
+# Berita
+--------------------------------------------------------------*/
+.berita p{
+  color: #000;
+  font-size: 15px;
+}
+.berita a{
+  color: #1a4167;
+  font-size: 12px;
+}
+.berita a:hover{
+  color: #dfc253;
+  font-size: 12px;
+}
+.berita h6{
+  font-weight: bold;
+  color: #000;
+}
+.berita .social-links a{
+  color: #1a4167;
+  padding: 30px;
+  height: 100px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+
+}
+.berita .social-links a:hover {
+  color: #dfc253;
+}
+.berita .social-links{
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Rating
+--------------------------------------------------------------*/
+.con{
+  
+}
+.fa-star{
+  font-size: ;
+}
+
+
+/*--------------------------------------------------------------
+# Footer Contact
+--------------------------------------------------------------*/
+#footer {
+  padding: 40px;
+  background-color: #1a4167;
+  margin-bottom: 0px;
+}
+.contact .info {
+  border-top: 3px solid #dfc253;
+  border-bottom: 3px solid #dfc253;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #1a4167;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eaf6ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222222;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555555;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #dfc253;
+  color: #fff;
+}
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #dfc253;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  border-top: 3px solid #dfc253;
+  border-bottom: 3px solid #dfc253;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: #dfc253;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #dfc253;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #6ec083;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
+# Copyright
+--------------------------------------------------------------*/
+.copyright{
+  padding: 10px;
+  background-color: #012d54;
+}
+.copyright p{
+  text-align: center;
+  color: white;
+  font-size: 12px;
+}
+}
+/*--------------------------------------------------------------
+# Copyright
+--------------------------------------------------------------*/
+body{
+  margin-bottom: 0px;
+  padding: 0px;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  height: 100vh;
+}
+.login-box{
+  width: 350px;
+  height: 450px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 70px;
+  transform: translate(-50%,-50%);
+}
+.login-web .icon{
+  width: 350px;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 70px;
+  transform: translate(-50%,-50%);
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+.icon{
+  width: 25px;
+  height: 20px;
+  margin-left: -55px;
+}
+h1{
+  margin-top: 0px;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.login-box p{
+  margin-bottom: 0px;
+  padding: 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.login-box input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}.login-box input[type="submit"]{
+  border: none;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  background:#1c8adb;
+}
+.login-box input[type="submit"]:hover{
+  cursor: pointer;
+  background:#E33D56;
+  color: #fff;
+}
+.login-box a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+.login-box a:hover{
+  color:#E33D56;
+}
+
+.bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #FFFFFF;
+    background: #0693fb;
+    border-radius: 10px;
+  }
+  .bar ul li{
+    text-align: center;
+    width: 100px;
+    margin: 10px;
+    padding: 15px;
+  }
+  .bar ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  .active, .bar ul li:hover{
+    background: #044879;
+    border-radius: 3px;
+  }
+  .sub-bar{
+    display: none;
+  }
+a {
+  font-size: 15px;
+  font-weight: bold;
+}
